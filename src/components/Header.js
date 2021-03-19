@@ -6,13 +6,13 @@ function Header({ location }) {
       <nav>
         <ul>
           <li className={`${location.pathname === "/" ? "active" : ""}`}>
-            <Link to="/">Home</Link>
+            <Link className="header__link" to="/">Home</Link>
           </li>
-          <li className={`${location.pathname === "/about" ? "active" : ""}`}>
-            <Link to="/About">About</Link>
+          <li className={`${location.pathname.toLowerCase() === "/about" ? "active" : ""}`}>
+            <Link className="header__link" to="/about">About</Link>
           </li>
-          <li className={`${location.pathname === "/contact" ? "active" : ""}`}>
-            <Link to="/Contact">Contact</Link>
+          <li className={`${location.pathname.toLowerCase() === "/contact" ? "active" : ""}`}>
+            <Link className="header__link" to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

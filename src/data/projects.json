@@ -1,0 +1,199 @@
+[
+    {
+        "id": "240458",
+        "pathname": "personal-portfolio",
+        "title": "Personal Portfolio", 
+        "technologies": [
+            "HTML", 
+            "Sass",
+            "React"
+        ],
+        "homePreview": "",
+        "slidePreviews": [
+            "",
+            ""
+        ],
+        "date": "March 2021",
+        "live": "http://reynarangel.com/",
+        "github": "https://github.com/rangelreyna/portfolio",
+        "intro": "",
+        "detailText": [
+            "",
+            "",
+            ""
+        ],
+        "hasFMCredit": false,
+        "prevProject": {
+            "title": "",
+            "path": ""
+        },
+        "nextProject": {
+            "title": "",
+            "path": ""
+        }
+    },
+    {
+        "id": "714948",
+        "pathname": "filterable-listings-app",
+        "title": "Filterable Listings App", 
+        "technologies": [
+            "HTML", 
+            "Sass",
+            "React"
+        ],
+        "homePreview": "",
+        "slidePreviews": [
+            "",
+            ""
+        ],
+        "date": "January 2021",
+        "live": "https://static-job-listings-three.vercel.app/",
+        "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/static-job-listings-master",
+        "intro": "A React app that allows you to filter through a set of job listings based on job role, level, and technologies used.",
+        "detailText": [
+            "This was my first project working with <strong>React</strong>. It was a great exercise to help me learn how dynamic web applications work. I chose to build it with React to help dynamically render different job listings as filtering categories changed.",
+            "The changing state of this app was managed using <strong>React hooks</strong> such as <strong>useState</strong> and <strong>useEffect</strong>. The initial set of displayed job listings are retrieved from a <strong>JSON</strong> file and these are then <strong>filtered</strong> through as the user selects category tags. The user is able to remove category tags from the filtering set one at a time or completely clear the set and view the initial job listings again.",
+            "Given mobile and desktop mockups, I built this app to be <strong>fully responsive</strong> by following a <strong>mobile-first</strong> approach. I used <strong>Sass partials</strong> and a <strong>BEM</strong> inspired class architecture to keep my styles organized and modular."
+        ],
+        "hasFMCredit": true,
+        "prevProject": {
+            "title": "Personal Portfolio",
+            "path": "personal-portfolio"
+        },
+        "nextProject": {
+            "title": "Manage Landing Page",
+            "path": "manage-landing-page"
+        }
+    },
+    {
+        "id": "565930",
+        "pathname": "manage-landing-page",
+        "title": "Manage Landing Page", 
+        "technologies": [
+            "HTML", 
+            "Sass",
+            "JavaScript"
+        ],
+        "homePreview": "",
+        "slidePreviews": [
+            "",
+            ""
+        ],
+        "date": "",
+        "live": "https://projects-and-challenges.vercel.app/manage-landing-page-master/index.html",
+        "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/manage-landing-page-master",
+        "intro": "A fully responsive page featuring a vanilla JavaScript slider, complete with mobile hamburger menu.",
+        "detailText": [
+            "",
+            "",
+            ""
+        ],
+        "hasFMCredit": true,
+        "prevProject": {
+            "title": "",
+            "path": ""
+        },
+        "nextProject": {
+            "title": "",
+            "path": ""
+        }
+    },
+    {
+        "id": "378722",
+        "pathname": "insure-landing-page",
+        "title": "Insure Landing Page", 
+        "technologies": [
+            "HTML", 
+            "Sass",
+            "JavaScript"
+        ],
+        "homePreview": "",
+        "slidePreviews": [
+            "",
+            ""
+        ],
+        "date": "",
+        "live": "https://projects-and-challenges.vercel.app/insure-landing-page-master/index.html",
+        "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/insure-landing-page-master",
+        "intro": "A fully responsive page featuring multiple overlapping elements, complete with mobile hamburger menu.",
+        "detailText": [
+            "",
+            "",
+            ""
+        ],
+        "hasFMCredit": true,
+        "prevProject": {
+            "title": "",
+            "path": ""
+        },
+        "nextProject": {
+            "title": "",
+            "path": ""
+        }
+    },
+    {
+        "id": "740390",
+        "pathname": "fylo-landing-page",
+        "title": "Fylo Landing Page", 
+        "technologies": [
+            "HTML", 
+            "Sass",
+            "JavaScript"
+        ],
+        "homePreview": "",
+        "slidePreviews": [
+            "",
+            ""
+        ],
+        "date": "",
+        "live": "https://projects-and-challenges.vercel.app/fylo-landing-page-with-two-column-layout-master/index.html",
+        "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/fylo-landing-page-with-two-column-layout-master",
+        "intro": "A simple 2-column layout landing page with single input forms and form validation.",
+        "detailText": [
+            "",
+            "",
+            ""
+        ],
+        "hasFMCredit": true,
+        "prevProject": {
+            "title": "",
+            "path": ""
+        },
+        "nextProject": {
+            "title": "",
+            "path": ""
+        }
+    },
+    {
+        "id": "837777",
+        "pathname": "huddle-landing-page",
+        "title": "Huddle Landing Page", 
+        "technologies": [
+            "HTML", 
+            "Sass"
+        ],
+        "homePreview": "",
+        "slidePreviews": [
+            "",
+            ""
+        ],
+        "date": "",
+        "live": "https://projects-and-challenges.vercel.app/huddle-landing-page-with-alternating-feature-blocks-master/index.html",
+        "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/huddle-landing-page-with-alternating-feature-blocks-master",
+        "intro": "A simple HTML and CSS landing page with alternating feature cards and a 4-column footer.",
+        "detailText": [
+            "",
+            "",
+            ""
+        ],
+        "hasFMCredit": true,
+        "prevProject": {
+            "title": "",
+            "path": ""
+        },
+        "nextProject": {
+            "title": "",
+            "path": ""
+        }
+    }
+]

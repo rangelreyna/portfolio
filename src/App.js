@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Header, Home, About, Contact, Project, Footer } from './components';
 import './App.css';
@@ -12,7 +12,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
-          <Route path="/project" exact component={Project} />
+          <Route path="/project-:pathname" exact component={Project} />
         </Switch>
         <Footer />
       </Router>
