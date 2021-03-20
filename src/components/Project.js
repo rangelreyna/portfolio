@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import projectsData from '../data/projects.json';
 import ReactHtmlParser from 'react-html-parser';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
-function Project({ match }) {
+function Project({ projectsData }) {
+  const { pathname } = useParams();
+
   const [project, setProject] = useState({
     technologies: [],
     slidePreviews: [],
@@ -11,8 +12,9 @@ function Project({ match }) {
   });
 
   useEffect(() => {
-    setProject(projectsData.find(project => project.pathname === match.params.pathname));
-  }, []);
+    const targetProject = projectsData.find(project => project.pathname === pathname);
+    setProject(targetProject);
+  }, [projectsData, pathname]);
 
   return (
     <div className="project">
@@ -23,6 +25,7 @@ function Project({ match }) {
           {ReactHtmlParser(paragraph) /* parsing to enable html <strong> tags */} 
         </p>
       ))}
+      <img src={process.env.PUBLIC_URL + "/slider-previews/fylo-desktop.png"} alt={project.title}/>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Header, Home, About, Contact, Project, Footer } from './components';
+import projectsData from './data/projects.json';
 import './App.css';
 
 function App() {
@@ -9,10 +10,10 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/project-:pathname" exact component={Project} />
+          <Route path="/" exact><Home projectsData={projectsData} /></Route>
+          <Route path="/about" exact><About /></Route>
+          <Route path="/contact" exact><Contact /></Route>
+          <Route path="/project-:pathname" exact><Project projectsData={projectsData} /></Route>
         </Switch>
         <Footer />
       </Router>
