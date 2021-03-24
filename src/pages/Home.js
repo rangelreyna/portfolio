@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { listings_home, manage_home, insure_home, fylo_home, huddle_home } from '../assets/images';
+import { listings_home, manage_home, insure_home, fylo_home, huddle_home } from 'assets/images';
 // svgs need to be imported as components: https://create-react-app.dev/docs/adding-images-fonts-and-files/
 import { Link } from 'react-router-dom';
 

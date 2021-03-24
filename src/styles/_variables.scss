@@ -1,0 +1,30 @@
+// Imported Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap'); // home hero title
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+// Fonts 
+$font_home_hero: 'Arima Madurai', cursive;
+$font_body: 'Montserrat', sans-serif;
+$font_regular: 400; 
+$font_medium: 500;
+$font_semi_bold: 600;
+$font_bold: 700;
+
+// Colors 
+$almost_white: hsl(0, 0%, 99%); 
+$very_light_blue: hsl(214, 54%, 97%); 
+$light_gray_blue: hsl(204, 32%, 75%); 
+$gray_blue: hsl(208, 40%, 68%); 
+$bright_blue: hsl(212, 88%, 76%); 
+$blue: hsl(212, 75%, 70%); 
+$dark_blue: hsl(206, 46%, 48%); 
+$dark_gray_blue: hsl(201, 23%, 48%); 
+$very_dark_gray_blue: hsl(203, 18%, 35%); 
+$very_dark_navy: hsl(203, 36%, 22%); 
+
+// Box Shadow
+$box-shadow: 0px 14px 20px -5px hsla(180, 29%, 50%, 0.3); // to be set
+
+// Breakpoints and Width
+$width: 87%; 
+$max_width: 1160px;

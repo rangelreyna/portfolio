@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: $font_body;
+    font-size: 16px;
+    background-color: $almost_white;
+}
+
+body.no-scroll{
+    overflow: hidden;
+}
+
+.App{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+.container{ 
+    width: $width;
+    max-width: $max_width; 
+    margin: 0 auto;
+}
+
+.button{
+    border: none;
+    font-family: inherit;
+    transition: background-color 0.3s;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: 1200px){ 
+    //
+}

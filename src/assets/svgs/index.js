@@ -1,0 +1,17 @@
+export { default as icon_arrow_right } from './icon-arrow-right.svg';
+export { default as icon_asterisk } from './icon-asterisk.svg';
+export { default as icon_chevron_left_l } from './icon-chevron-left-l.svg';
+export { default as icon_chevron_left_m } from './icon-chevron-left-m.svg';
+export { default as icon_chevron_right_l } from './icon-chevron-right-l.svg';
+export { default as icon_chevron_right_m } from './icon-chevron-right-m.svg';
+export { default as icon_chevron_up } from './icon-chevron-up.svg';
+export { default as icon_location } from './icon-location.svg';
+export { default as logo } from './logo.svg';
+export { default as logo_css } from './logo-css.svg';
+export { default as logo_footer } from './logo-footer.svg';
+export { default as logo_html } from './logo-html.svg';
+export { default as logo_js } from './logo-js.svg';
+export { default as logo_react } from './logo-react.svg';
+export { default as logo_sass } from './logo-sass.svg';
+export { default as pattern_diamond } from './pattern-diamond.svg';
+export { default as pattern_square } from './pattern-square.svg';

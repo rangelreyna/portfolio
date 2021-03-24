@@ -1,10 +1,12 @@
-//@import "./styles/variables";
-//@import "./styles/globals";
+@import "./styles/variables";
+@import "./styles/globals";
 
-body{
-    background-color: antiquewhite;
-}
+// components 
+@import "./styles/components/header";
+@import "./styles/components/footer";
 
-li.active .header__link{
-    color: cadetblue;
-}
+// pages
+@import "./styles/pages/home";
+@import "./styles/pages/about";
+@import "./styles/pages/contact";
+@import "./styles/pages/project";
