@@ -124,7 +124,7 @@
 // Desktop Media Query 
 @media only screen and (min-width: 900px){
     .header{
-        height: 120px;
+        height: 110px;
         
         &__logo img{
             width: 188px; 
@@ -168,6 +168,7 @@
         &__link{
             font-size: 1.06rem; 
             color: $gray_blue;
+            transition: color 0.3s;
             &:hover{
                 color: $dark_blue; 
             }
@@ -178,6 +179,7 @@
             margin: unset;
             i{
                 font-size: 1.9rem;
+                transition: color 0.3s;
                 &:hover{
                     color: $dark_blue;
                 }

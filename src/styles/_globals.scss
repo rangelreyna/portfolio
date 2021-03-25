@@ -32,11 +32,18 @@ a{
 }
 
 .button{
+    padding: 15px 38px; 
     border: none;
+    border-radius: 5px;
     font-family: inherit;
+    font-size: 1.1875rem; 
+    font-weight: $font_medium;
+    background-color: $blue;
+    color: #fff;
     transition: background-color 0.3s;
     &:hover{
         cursor: pointer;
+        background-color: $bright_blue;
     }
 }
 
