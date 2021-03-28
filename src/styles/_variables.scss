@@ -21,10 +21,20 @@ $dark_blue: hsl(206, 46%, 48%);
 $dark_gray_blue: hsl(201, 23%, 48%); 
 $very_dark_gray_blue: hsl(203, 18%, 35%); 
 $very_dark_navy: hsl(203, 36%, 22%); 
+$error_color: hsl(0, 77%, 67%);
+$success_color: hsl(140, 41%, 55%);
 
 // Box Shadow
-$box-shadow: 0px 14px 20px -5px hsla(180, 29%, 50%, 0.3); // to be set
+$box-shadow: 0px 15px 25px -5px hsla(201, 23%, 48%, 0.15); // to be set
 
 // Breakpoints and Width
 $width: 87%; 
 $max_width: 1160px;
+$left_width: 42%;
+$right_width: 58%;
+// 900 
+// 1000
+// 1300
+
+$top-padding-mobile: 40px;
+$top-padding-desktop: 100px; // still needs to be set 

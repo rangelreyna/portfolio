@@ -1,0 +1,86 @@
+
+.social-tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__tablet{
+        position: relative;
+        box-sizing: border-box;
+        max-width: 100%;
+        padding: 20px 25px; 
+        background-color: $almost_white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        transition: all 0.4s;
+        &:not(:last-child){
+            margin-bottom: 30px; 
+        }
+        i{
+            font-size: 1.875rem; // 30 
+            padding-right: 20px; 
+            color: $bright_blue;
+        }
+        .fa-envelope{
+            font-size: 1.6875rem; // 27
+        }
+        p{
+            font-weight: $font_medium;
+            font-size: 1rem; // 16
+            color: $dark_gray_blue;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background-color: $bright_blue;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        &:hover{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            box-shadow: $box-shadow;
+            transform: scale(1.02);
+            &::after{
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: 1000px){
+    .social-tablets{
+        display: block; 
+        
+        &__tablet{
+            padding: 22px 27px; 
+            display: inline-flex;
+            &:not(:last-child){
+                margin-right: 30px;
+            }
+            &.email{
+                margin-right: 120px;
+            }
+            i{
+                font-size: 2rem; // 32 
+            }
+            .fa-envelope{
+                font-size: 1.8125rem; // 29
+            }
+            p{
+                font-size: 1.1875rem; // 19 
+            }
+            &:hover{
+                transform: scale(1.025);
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+
+.form{
+    position: relative;
+    max-width: 670px; 
+    margin: 0 auto;
+    
+    &__field-wrapper{
+        label{
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.25rem; // 20
+            font-weight: $font_medium;
+            color: $dark_gray_blue;
+        }
+        input, textarea{
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 13px;
+            padding: 17px 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: #edf2f6;
+            font-family: inherit;
+            color: $blue;
+            font-weight: $font_regular; 
+            font-size: 1.125rem; // 18
+            &::placeholder{
+                color: $gray_blue;
+            }
+        }
+        textarea{
+            resize: vertical;
+        }
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+    }
+
+    &__field-error{
+        color: $error_color;
+    }
+
+    &__submit-btn:disabled{
+        opacity: 0.7;
+    }
+
+    &__submit-msg{
+        position: absolute;
+        pointer-events: none;
+        bottom: -50px;
+        font-size: 1.3125rem; // 21
+        font-weight: $font_bold;
+        color: $success_color;
+        opacity: 0;
+        transition: opacity 0.1s;
+        &.visible{
+            opacity: 1;
+        }
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: 1000px){
+    .form{
+        max-width: 100%; 
+    
+        &__field-wrapper{
+            label{
+                font-size: 1.3125rem; // 21 
+            }
+            input, textarea{
+                font-size: 1.1875rem; // 19
+            }
+        }
+    }
+}

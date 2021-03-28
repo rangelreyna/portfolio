@@ -1,0 +1,80 @@
+@import "./social-tablets";
+@import "./form";
+
+.contact{
+    
+    &__hero-sec{
+        padding: $top-padding-mobile 0 60px 0;
+        background-color: $very_light_blue;
+        .diamond{
+            display: none;
+        }
+    }
+
+    &__form-sec{
+        padding: 60px 0 120px 0;
+    }
+
+    &__left{
+        padding-bottom: 60px;
+        .title{
+            padding: 0 20px 20px 20px;
+            text-align: center;
+        }
+        .accent-line{
+            margin: 0 auto;
+        }
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: 1000px){
+    .contact{
+        
+        &__hero-sec{
+            position: relative;
+            padding: $top-padding-desktop 0 100px 0;  
+            .container{
+                display: flex; 
+                justify-content: space-between;
+                align-items: flex-start; 
+            }
+        }
+    
+        &__form-sec{
+            padding: 110px 0 130px 0; 
+            .container{
+                display: flex; 
+                justify-content: space-between;
+                align-items: flex-start; 
+            }
+        }
+    
+        &__left{ 
+            width: $left_width;
+            padding-bottom: unset; 
+            .title{
+                padding: 0 100px 20px 0; 
+                text-align: left;
+            }
+            .accent-line{
+                margin: unset;
+            }
+        }
+    
+        &__right{
+            width: $right_width;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .contact__hero-sec .diamond{
+        display: block; 
+        position: absolute;
+        bottom: 0;
+        left: -220px;
+        transform: translateY(50%);
+    }
+}
