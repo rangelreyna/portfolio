@@ -1,11 +1,93 @@
+@import ".//hero-sec";
+@import "./detail-box";
 
 .about{
     
-    //
+    &__hero-sec{
+        background-color: $very_light_blue;
+        padding: $top-padding-mobile 0 70px 0;
+    }
+
+    &__detail-sec{
+        padding: 70px 0;
+    }
+
+    &__cta-sec{
+        padding: 80px 0 50px 0;
+        background-color: transparentize($light_gray_blue, 0.9);
+        text-align: center;
+        p{
+            margin-bottom: 40px; 
+            font-weight: $font_regular;
+            font-size: 1rem; // 16
+            line-height: 1.8;
+            color: $dark_gray_blue;
+        }
+        .accent-line{
+            margin: 0 auto 60px auto;
+        }
+        h4{
+            margin-bottom: 25px;
+            font-size: 1.875rem; // 30
+        }
+        .link{
+            font-weight: $font_semi_bold;
+            color: $bright_blue;
+            transition: color 0.3s;
+            &:hover{
+                color: $dark_blue;
+            }
+        }
+    }
 
 }
 
-// Desktop Media Query 
+@media only screen and (min-width: 600px){
+    .about__cta-sec p{
+        margin: 0 auto 40px auto;
+        font-size: 1.125rem; // 18
+        max-width: 520px;
+    }
+}
+
 @media only screen and (min-width: 900px){
-    //
+    .about__cta-sec{
+        p{
+            font-size: 1.25rem; // 20
+            max-width: 600px;
+        }
+        h4{
+            font-size: 2.1875rem; // 35
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){ 
+    .about__detail-sec{
+        background-color: $almost_white;
+        margin-top: -11%;
+        padding: calc(11% + 50px) 0 110px 0;
+    }
+    .about__cta-sec .accent-line{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .about__cta-sec{
+        p{
+            font-size: 1.5rem; // 24
+            max-width: 730px;
+        }
+        h4{
+            font-size: 2.5rem; // 40
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .about__detail-sec{
+        margin-top: -158px;
+        padding: 208px 0 110px 0;
+    }
 }

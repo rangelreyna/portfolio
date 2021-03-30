@@ -35,20 +35,16 @@
         &__hero-sec{
             position: relative;
             padding: $top-padding-desktop 0 100px 0;  
-            .container{
-                display: flex; 
-                justify-content: space-between;
-                align-items: flex-start; 
-            }
         }
     
         &__form-sec{
             padding: 110px 0 130px 0; 
-            .container{
-                display: flex; 
-                justify-content: space-between;
-                align-items: flex-start; 
-            }
+        }
+
+        .container{
+            display: flex; 
+            justify-content: space-between;
+            align-items: flex-start; 
         }
     
         &__left{ 
