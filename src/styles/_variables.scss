@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 // Fonts 
-$font_home_hero: 'Arima Madurai', cursive;
+$font_home_hero: 'Arima Madurai', sans-serif;
 $font_body: 'Montserrat', sans-serif;
 $font_regular: 400; 
 $font_medium: 500;
@@ -26,14 +26,18 @@ $success_color: hsl(140, 41%, 55%);
 
 // Box Shadow
 $box-shadow: 0px 15px 25px -5px hsla(201, 23%, 48%, 0.15); // to be set
+$thin-box-shadow: 0px 5px 5px -5px hsla(201, 23%, 48%, 0.15);
 
 // Breakpoints and Width
 $width: 87%; 
 $max_width: 1160px;
 $left_width: 42%;
 $right_width: 58%;
+// 500
 // 600 
+// 660
 // 730
+// 800 
 // 900 
 // 1000
 // 1300

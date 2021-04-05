@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Header, Footer } from './components';
+import { ScrollToTop, Header, Footer } from './components';
 import { Home, About, Contact, Project } from './pages';
 import projectsData from './data/projects.json';
 import './App.css';
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Header />
         <Switch>
           <Route path="/" exact><Home projectsData={projectsData} /></Route>

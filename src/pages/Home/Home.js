@@ -1,32 +1,63 @@
-import React, { useState, useEffect } from 'react';
-import { listings_home, manage_home, insure_home, fylo_home, huddle_home } from 'assets/images';
-// svgs need to be imported as components: https://create-react-app.dev/docs/adding-images-fonts-and-files/
 import { Link } from 'react-router-dom';
-
-const previews = {
-  listings_home: listings_home,
-  manage_home: manage_home,
-  insure_home: insure_home,
-  fylo_home: fylo_home,
-  huddle_home: huddle_home
-};
+import Logo from './Logo';
+import Projects from './Projects';
+import { Button } from 'components';
+import { icon_location, icon_arrow_right, logo_html, logo_css, logo_js, logo_sass, logo_react } from 'assets/svgs';
+import { ReactComponent as Diamond } from 'assets/svgs/pattern-diamond.svg';
 
 function Home({ projectsData }) {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    setProjects(projectsData);
-  }, [projectsData]);
-
   return (
     <div className="home">
-      <p>home</p>
-      {projects.map(project => (
-        <p key={project.id}>
-          <Link to={`/project-${project.pathname}`}>{project.title}</Link>
-        </p>
-      ))}
-      <img src={previews["fylo_home"]} alt="fylo-preview"/>
+      <section className="home__hero-sec">
+        <div className="container">
+          <h1 className="title">Hi, I'm Reyna</h1>
+          <p className="brief">A Front-end web developer focused on building beautiful and responsive websites.</p>
+          <div className="location">
+            <img src={icon_location} alt="icon-location"/>
+            <p>Far North Dallas, TX</p>
+          </div>
+          <a href="#work">
+            <Button className={"see-work-btn"} content={
+              <><p>See my work</p>
+              <img src={icon_arrow_right} alt="icon-arrow-right"/></>
+            } />
+          </a>
+        </div>
+        <Diamond className="diamond-left" />
+        <Diamond className="diamond-right" />
+      </section>
+
+      <section className="home__skills-sec" id="work">
+        <div className="container">
+          <h3 className="section-title">Technical Skills</h3>
+          <div className="accent-line"></div>
+          <div className="logos-wrapper">
+            <Logo logo={logo_html} title={"HTML5"} />
+            <Logo logo={logo_css} title={"CSS3"} />
+            <Logo logo={logo_js} title={"JavaScript"} />
+            <Logo logo={logo_sass} title={"Sass"} />
+            <Logo logo={logo_react} title={"React"} />
+          </div>
+        </div>
+      </section>
+
+      <section className="home__projects-sec">
+        <div className="container">
+          <h3 className="section-title">Portfolio</h3>
+          <div className="accent-line"></div>
+          <Projects projectsData={projectsData} />
+        </div>
+      </section>
+
+      <section className="home__cta-sec">
+        <div className="container">
+          <h4>Have a question or want to work together?</h4>
+          <p>Feel free to contact me</p>
+          <Link to="/contact">
+            <Button className={"contact-btn"} content={"Contact me"} />
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

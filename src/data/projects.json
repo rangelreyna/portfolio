@@ -6,10 +6,7 @@
         "pathname": "personal-portfolio",
         "live": "http://reynarangel.com/",
         "github": "https://github.com/rangelreyna/portfolio",
-        "technologies": [
-            "React",
-            "Sass"
-        ],
+        "technologies": "React - Sass",
         "intro": "",
         "detailText": [
             "",
@@ -38,10 +35,7 @@
         "pathname": "filterable-listings-app",
         "live": "https://static-job-listings-three.vercel.app/",
         "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/static-job-listings-master",
-        "technologies": [
-            "React",
-            "Sass"
-        ],
+        "technologies": "React - Sass",
         "intro": "A React app that allows you to filter through a set of job listings based on job role, level, and technologies used.",
         "detailText": [
             "This was my first project working with <strong>React</strong>. It was a great exercise to help me learn how dynamic web applications work. I chose to build it with React to help dynamically render different job listings as filtering categories changed.",
@@ -70,11 +64,7 @@
         "pathname": "manage-landing-page",
         "live": "https://projects-and-challenges.vercel.app/manage-landing-page-master/index.html",
         "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/manage-landing-page-master",
-        "technologies": [
-            "HTML", 
-            "Sass",
-            "JavaScript"
-        ],
+        "technologies": "HTML - Sass - JavaScript",
         "intro": "A fully responsive page featuring a vanilla JavaScript slider, complete with mobile hamburger menu.",
         "detailText": [
             "This landing page was great at testing my responsive and ingenuity skills, it had plenty of layout shifts to accommodate for as breakpoints changed. These layout challenges were mainly in the features section, <strong>testimonial slider</strong>, and footer.",
@@ -103,11 +93,7 @@
         "pathname": "insure-landing-page",
         "live": "https://projects-and-challenges.vercel.app/insure-landing-page-master/index.html",
         "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/insure-landing-page-master",
-        "technologies": [
-            "HTML", 
-            "Sass",
-            "JavaScript"
-        ],
+        "technologies": "HTML - Sass - JavaScript",
         "intro": "A fully responsive page featuring multiple overlapping elements, complete with mobile hamburger menu.",
         "detailText": [
             "This landing page was a nice challenge and learning experience. Implementing the responsive navigation bar with a <strong>hamburger menu</strong> and composing the hero with overlapping elements added some pleasant complexity.",
@@ -136,11 +122,7 @@
         "pathname": "fylo-landing-page",
         "live": "https://projects-and-challenges.vercel.app/fylo-landing-page-with-two-column-layout-master/index.html",
         "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/fylo-landing-page-with-two-column-layout-master",
-        "technologies": [
-            "HTML", 
-            "Sass",
-            "JavaScript"
-        ],
+        "technologies": "HTML - Sass - JavaScript",
         "intro": "A simple 2-column layout landing page with single input forms and form validation.",
         "detailText": [
             "This landing page was among the first landing pages I worked on. It served as an opportunity to further my experience laying out simple webpages, while also introducing some complexity through <strong>forms</strong> and <strong>form validation</strong>.",
@@ -169,10 +151,7 @@
         "pathname": "huddle-landing-page",
         "live": "https://projects-and-challenges.vercel.app/huddle-landing-page-with-alternating-feature-blocks-master/index.html",
         "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/huddle-landing-page-with-alternating-feature-blocks-master",
-        "technologies": [
-            "HTML", 
-            "Sass"
-        ],
+        "technologies": "HTML - Sass",
         "intro": "A simple HTML and CSS landing page with alternating feature cards and a 4-column footer.",
         "detailText": [
             "As one of the first landing pages I worked on, my main purpose building this was to practice laying out webpages. The footer specifically proved to be a nice challenge for the desktop breakpoint.",

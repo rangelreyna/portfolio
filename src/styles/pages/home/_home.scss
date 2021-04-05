@@ -1,13 +1,116 @@
+@import "./hero-sec";
+@import "./skills-sec";
+@import "./projects-sec";
+@import "./cta-sec";
 
-.home{
+.home{ // for general layout 
     
-    img{
-        display: none;
+    &__hero-sec{
+        padding: $top-padding-mobile 0 60px 0;
+        background-color: $very_light_blue;
+        text-align: center;
+        .diamond-left, .diamond-right{
+            display: none;
+        }
+    }
+
+    &__skills-sec{
+        padding: 60px 0;
+    }
+
+    &__projects-sec{
+        padding: 60px 0;
+    }
+
+    &__cta-sec{
+        padding: 60px 0;
+        background-color: transparentize($light_gray_blue, 0.9);
+        text-align: center;
+    }
+
+    .section-title{
+        padding: 0 20px 20px 20px;
+        text-align: center;
+        font-size: 2.5rem; // 40
     }
 
 }
 
-// Desktop Media Query 
 @media only screen and (min-width: 900px){
-    //
+    .home__hero-sec{ 
+        position: relative;
+        .diamond-left, .diamond-right{
+            display: block;
+            position: absolute;
+            width: 270px;
+        }
+        .diamond-left{
+            top: 50px;
+            left: 0;
+            transform: translateX(-50%);
+        } 
+        .diamond-right{
+            bottom: 0;
+            right: 0;
+            transform: translateX(50%);
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .home{ 
+        &__hero-sec{
+            padding: $top-padding-desktop 0 100px 0; 
+            .diamond-left{
+                top: 130px;
+            } 
+            .diamond-right{
+                bottom: -40px;
+            }
+        }
+    
+        &__skills-sec{
+            padding: 100px 0; 
+        }
+    
+        &__projects-sec{
+            padding: 60px 0 100px 0;
+        }
+    
+        &__cta-sec{
+            padding: 80px 0;
+        }
+    
+        .section-title{
+            font-size: 2.8125rem; // 45
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .home{ 
+        &__hero-sec{
+            .diamond-left, .diamond-right{
+                width: 21%;
+            }
+            .diamond-left{
+                top: 140px;
+            } 
+            .diamond-right{
+                bottom: -70px;
+            }
+        }
+    
+        &__projects-sec{
+            padding: 60px 0 120px 0;
+        }
+    
+        &__cta-sec{
+            padding: 100px 0;
+        }
+    
+        .section-title{
+            font-size: 3.125rem; // 50
+        }
+    }
 }
