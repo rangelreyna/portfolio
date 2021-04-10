@@ -10,21 +10,12 @@
     }
 
     .accent-line{
-        margin: 0 auto 60px auto;
+        margin: 0 auto 40px auto;
     }
 
     h4{
         margin-bottom: 25px;
         font-size: 1.875rem; // 30
-    }
-
-    .link{
-        font-weight: $font_semi_bold;
-        color: $bright_blue;
-        transition: color 0.3s;
-        &:hover{
-            color: $dark_blue;
-        }
     }
 
 }
@@ -50,8 +41,13 @@
 }
 
 @media only screen and (min-width: 1000px){
-    .about__cta-sec .accent-line{
-        margin-bottom: 50px;
+    .about__cta-sec{
+        p{
+            margin-bottom: 45px;
+        }
+        .accent-line{
+            margin-bottom: 45px;
+        }
     }
 }
 

@@ -75,6 +75,15 @@ h5{
     background-color: $bright_blue;
 }
 
+.link{
+    font-weight: $font_semi_bold;
+    color: $bright_blue;
+    transition: color 0.3s;
+    &:hover{
+        color: $dark_blue;
+    }
+}
+
 // Desktop Media Query 
 @media only screen and (min-width: 1000px){ 
     h2, h3, h4, h5{

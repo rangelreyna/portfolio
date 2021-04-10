@@ -1,0 +1,140 @@
+@import "./project-nav";
+
+.project__detail-sec{ 
+
+    .details-header{
+        &__metadata-container{
+            margin: 20px 0; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        p{
+            font-size: 0.875rem; // 14
+            font-weight: $font_medium;
+            color: $dark_gray_blue;
+        }
+        .division{
+            margin-bottom: 30px;
+        }
+        .heading{
+            font-size: 1.5625rem; // 25
+            color: $very_dark_navy;
+        }
+        .fa-github{
+            font-size: 1.875rem; // 30 
+            color: $light_gray_blue;
+            transition: color 0.3s;
+            &:hover{
+                color: $bright_blue;
+            }
+        }
+    }
+
+    .details-body{
+        margin: 40px 0 20px 0;
+        color: $dark_gray_blue;
+        font-weight: $font_regular;
+        &__paragraph{
+            margin-bottom: 35px; 
+            font-size: 1rem; // 16
+            line-height: 1.8;
+            strong{
+                font-weight: $font_semi_bold;
+            }
+        }
+        &__FMCredit{
+            padding-top: 15px;
+            display: flex;
+            align-items: center;
+            .asterisk{
+                display: block;
+                margin-right: 10px;
+                width: 8px;
+                height: auto;
+            }
+            p{
+                font-size: 1rem; // 16
+            }
+        }
+        .division{
+            margin-top: 60px; 
+        }
+    }
+
+}
+
+@media only screen and (min-width: 500px){
+    .project__detail-sec{ 
+        .details-header{
+            p{
+                font-size: 1rem; // 16
+            }
+            .fa-github{
+                font-size: 2rem; // 32
+            }
+        }
+    
+        .details-body .division{
+            margin-top: 70px; 
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .project__detail-sec{ 
+        .details-header{
+            p{
+                font-size: 1.125rem; // 18
+            }
+            .fa-github{
+                font-size: 2.1875rem; // 35
+            }
+        }
+    
+        .details-body .division{
+            margin-top: 80px; 
+        }
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .project__detail-sec{ 
+        .details-header{
+            &__metadata-container{
+                margin: 25px 0; 
+            }
+            p{
+                font-size: 1.25rem; // 20
+            }
+            .division{
+                margin-bottom: 45px;
+            }
+            .heading{
+                font-size: 1.875rem; // 30
+            }
+            .fa-github{
+                font-size: 2.5rem; // 40 
+            }
+        }
+    
+        .details-body{
+            margin: 55px 0 25px 0; 
+            &__paragraph{
+                font-size: 1.1875rem; // 19
+            }
+            &__FMCredit{
+                padding-top: 30px; 
+                .asterisk{
+                    width: 9px;
+                }
+                p{
+                    font-size: 1.0625rem; // 17
+                }
+            }
+            .division{
+                margin-top: 100px; 
+            }
+        }
+    }
+}

@@ -43,6 +43,7 @@
             "Given mobile and desktop mockups, I built this app to be <strong>fully responsive</strong> by following a <strong>mobile-first</strong> approach. I used <strong>Sass partials</strong> and a <strong>BEM</strong> inspired class architecture to keep my styles organized and modular."
         ],
         "hasFMCredit": true,
+        "FMChallenge": "https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt",
         "homePreview": "listings_home",
         "slidePreviews": [
             "/slider-previews/listings-desktop.png",
@@ -72,6 +73,7 @@
             "The entire page was built to be <strong>fully responsive</strong> by referencing given mobile and desktop mockups and following a <strong>mobile-first</strong> approach. To keep my styles organized and modular, I used <strong>Sass partials</strong> and a <strong>BEM</strong> inspired class architecture."
         ],
         "hasFMCredit": true,
+        "FMChallenge": "https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5",
         "homePreview": "manage_home",
         "slidePreviews": [
             "/slider-previews/manage-desktop.png",
@@ -101,6 +103,7 @@
             "Given mobile and desktop mockups, I took a <strong>mobile-first</strong> approach and built this page to be <strong>fully responsive</strong>. I used <strong>Sass partials</strong> and a <strong>BEM</strong> inspired class architecture to keep my styles organized and modular."
         ],
         "hasFMCredit": true,
+        "FMChallenge": "https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8",
         "homePreview": "insure_home",
         "slidePreviews": [
             "/slider-previews/insure-desktop.png",
@@ -130,6 +133,7 @@
             "I built this site to be <strong>fully responsive</strong> through referencing given mobile and desktop mockups and following a <strong>mobile-first</strong> approach."
         ],
         "hasFMCredit": true,
+        "FMChallenge": "https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5",
         "homePreview": "fylo_home",
         "slidePreviews": [
             "/slider-previews/fylo-desktop.png",
@@ -159,6 +163,7 @@
             "Although <strong>Sass</strong> was not necessary for this simple project, I went ahead and used it to get more comfortable with it since I planned to use it for future projects."
         ],
         "hasFMCredit": true,
+        "FMChallenge": "https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100",
         "homePreview": "huddle_home",
         "slidePreviews": [
             "/slider-previews/huddle-desktop.png",

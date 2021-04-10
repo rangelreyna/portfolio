@@ -1,0 +1,111 @@
+
+.slider{ 
+
+    &__container{
+        display: flex;
+        transform: translateX(0%);
+        transition: transform 0.3s;
+    }
+
+    &__slide{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__left-btn, &__right-btn{
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparentize($very_dark_gray_blue, 0.9);
+        transition: all 0.3s;
+        img{
+            display: block;
+            width: 8px;
+            height: auto;
+        }
+        &.available{
+            visibility: visible;
+            opacity: 1;
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: transparentize($very_dark_gray_blue, 0.6);
+        }
+    }
+
+    &__left-btn{
+        left: 5px;
+        img{
+            padding-right: 2px;
+        }
+    }
+
+    &__right-btn{
+        right: 5px;
+        img{
+            padding-left: 2px;
+        }
+    }
+    
+} 
+
+@media only screen and (min-width: 660px){
+    .slider{ 
+        &__left-btn, &__right-btn{
+            width: 40px;
+            height: 40px;
+            img{
+                width: 9px;
+            }
+        }
+    
+        &__left-btn{
+            left: 10px;
+        }
+    
+        &__right-btn{
+            right: 10px;
+        }  
+    } 
+}
+
+@media only screen and (min-width: 900px){
+    .slider{ 
+        &__left-btn, &__right-btn{
+            width: 50px;
+            height: 50px;
+            img{
+                width: 11px;
+            }
+        }
+    
+        &__left-btn{
+            left: 15px;
+        }
+    
+        &__right-btn{
+            right: 15px;
+        }  
+    } 
+}
+
+@media only screen and (min-width: 1300px){
+    .slider{ 
+        &__left-btn{
+            left: 20px;
+        }
+    
+        &__right-btn{
+            right: 20px;
+        }  
+    } 
+}
