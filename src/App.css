@@ -9,7 +9,6 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   background-color: #fcfcfc;
-  scroll-behavior: smooth;
 }
 
 body.no-scroll {
@@ -29,22 +28,6 @@ h2, h3, h4, h5 {
   font-weight: 500;
 }
 
-h2 {
-  font-size: 4.375rem;
-}
-
-h3 {
-  font-size: 3.125rem;
-}
-
-h4 {
-  font-size: 2.5rem;
-}
-
-h5 {
-  font-size: 1.875rem;
-}
-
 *:focus {
   outline: none;
 }
@@ -53,6 +36,50 @@ h5 {
   width: 87%;
   max-width: 1160px;
   margin: 0 auto;
+}
+
+.quick-up-btn {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(73, 93, 105, 0.15);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.quick-up-btn img {
+  display: block;
+  width: 16px;
+  height: auto;
+}
+
+.quick-up-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.quick-up-btn:hover {
+  cursor: pointer;
+  background-color: rgba(73, 93, 105, 0.4);
 }
 
 .button {
@@ -91,26 +118,8 @@ h5 {
 }
 
 @media only screen and (min-width: 1000px) {
-  h2, h3, h4, h5 {
-    color: #495d69;
-    font-weight: 500;
-  }
-  h2 {
-    font-size: 4.375rem;
-  }
-  h3 {
-    font-size: 3.125rem;
-  }
-  h4 {
-    font-size: 2.5rem;
-  }
-  h5 {
-    font-size: 1.875rem;
-  }
   .accent-line {
-    width: 100px;
     height: 3px;
-    background-color: #8cbef8;
   }
 }
 
@@ -165,7 +174,7 @@ h5 {
 
 .header__logo {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
 .header__logo img {
@@ -178,7 +187,7 @@ h5 {
   position: relative;
   padding: 15px;
   margin-right: -15px;
-  z-index: 3;
+  z-index: 4;
 }
 
 .header__hamburger-btn > div {
@@ -218,7 +227,7 @@ h5 {
   opacity: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__overlay > * {
@@ -1456,6 +1465,7 @@ h5 {
 .contact__left .title {
   padding: 0 20px 20px 20px;
   text-align: center;
+  font-size: 2.5rem;
 }
 
 .contact__left .accent-line {

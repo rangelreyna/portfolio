@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink, Element } from 'react-scroll';
 import Logo from './Logo';
 import Projects from './Projects';
 import { Button } from 'components';
@@ -16,30 +17,32 @@ function Home({ projectsData }) {
             <img src={icon_location} alt="icon-location"/>
             <p>Far North Dallas, TX</p>
           </div>
-          <a href="#work">
+          <ScrollLink to="work" smooth={true} duration={500}>
             <Button className={"see-work-btn"} content={
               <><p>See my work</p>
               <img src={icon_arrow_right} alt="icon-arrow-right"/></>
             } />
-          </a>
+          </ScrollLink>
         </div>
         <Diamond className="diamond-left" />
         <Diamond className="diamond-right" />
       </section>
 
-      <section className="home__skills-sec" id="work">
-        <div className="container">
-          <h3 className="section-title">Technical Skills</h3>
-          <div className="accent-line"></div>
-          <div className="logos-wrapper">
-            <Logo logo={logo_html} title={"HTML5"} />
-            <Logo logo={logo_css} title={"CSS3"} />
-            <Logo logo={logo_js} title={"JavaScript"} />
-            <Logo logo={logo_sass} title={"Sass"} />
-            <Logo logo={logo_react} title={"React"} />
+      <Element name="work">
+        <section className="home__skills-sec">
+          <div className="container">
+            <h3 className="section-title">Technical Skills</h3>
+            <div className="accent-line"></div>
+            <div className="logos-wrapper">
+              <Logo logo={logo_html} title={"HTML5"} />
+              <Logo logo={logo_css} title={"CSS3"} />
+              <Logo logo={logo_js} title={"JavaScript"} />
+              <Logo logo={logo_sass} title={"Sass"} />
+              <Logo logo={logo_react} title={"React"} />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Element>
 
       <section className="home__projects-sec">
         <div className="container">
