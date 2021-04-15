@@ -1,4 +1,5 @@
 export { default as ScrollToTop } from './ScrollToTop';
+export { default as FadeInWhenVisible } from './FadeInWhenVisible';
 export { default as Header } from './Header/Header';
 export { default as Button } from './Button';
 export { default as Footer } from './Footer';

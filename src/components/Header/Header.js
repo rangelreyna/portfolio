@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from "framer-motion";
 import { Logo, Socials } from 'components';
 import Hamburger from './Hamburger';
 import Links from './Links';
@@ -19,7 +20,8 @@ function Header() {
   };
 
   return (
-    <header className={"header " + (isOpen ? 'open' : null)} id="top">
+    <motion.header className={"header " + (isOpen ? 'open' : null)} id="top"
+      animate={{ opacity: 1, y: "0%" }} initial={{ opacity: 0, y: "-100%" }} transition={{ delay: 0.1, duration: 0.8, ease: "easeOut" }}>
       <nav className="container">
         <Logo logo={logo} className={"header__logo"} onClick={closeHamburgerBtn} />
         <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -28,7 +30,7 @@ function Header() {
           <Socials className={"header__socials"} />
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 }
   

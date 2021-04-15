@@ -13,14 +13,16 @@
 
     .slider{
         position: relative;
-        margin: 60px auto; 
+        margin: 0 auto 60px auto; 
         width: 95%;
         max-width: 980px; 
         overflow: hidden;
+        background-color: $almost_white;
     }
 
     &__detail-sec{
-        margin: 60px 0;
+        padding: 60px 0;
+        background-color: $almost_white;
         .info-wrapper{
             max-width: 840px; 
         }
@@ -33,7 +35,7 @@
 
     &__cta-sec{
         padding: 60px 0;
-        background-color: transparentize($light_gray_blue, 0.9);
+        background-color: $almost_white, transparentize($light_gray_blue, 0.9);
         text-align: center;
     }
 
@@ -41,7 +43,7 @@
 
 @media only screen and (min-width: 900px){ 
     .project__detail-sec{ 
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -52,7 +54,7 @@
         }
     
         &__detail-sec{
-            margin-bottom: 120px; 
+            padding-bottom: 120px; 
         }
     
         &__cta-sec{
@@ -68,8 +70,11 @@
         }
 
         .slider{
-            margin: 90px auto 60px auto; 
             border-radius: 5px;
+        }
+
+        &__detail-sec{
+            padding-top: 90px;
         }
     
         &__cta-sec{

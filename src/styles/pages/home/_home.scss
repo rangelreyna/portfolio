@@ -16,15 +16,17 @@
 
     &__skills-sec{
         padding: 60px 0;
+        background-color: $almost_white;
     }
 
     &__projects-sec{
         padding: 60px 0;
+        background-color: $almost_white;
     }
 
     &__cta-sec{
         padding: 60px 0;
-        background-color: transparentize($light_gray_blue, 0.9);
+        background-color: $almost_white, transparentize($light_gray_blue, 0.9);
         text-align: center;
     }
 
@@ -43,16 +45,23 @@
             display: block;
             position: absolute;
             width: 270px;
+            transition: transform 0.6s ease-out;
         }
         .diamond-left{
             top: 50px;
             left: 0;
-            transform: translateX(-50%);
+            transform: translateX(-100%);
+            &.visible{
+                transform: translateX(-50%);
+            }
         } 
         .diamond-right{
             bottom: 0;
             right: 0;
-            transform: translateX(50%);
+            transform: translateX(100%);
+            &.visible{
+                transform: translateX(50%);
+            }
         }
     }
 }

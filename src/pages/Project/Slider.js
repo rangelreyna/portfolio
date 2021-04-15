@@ -10,7 +10,7 @@ function Slider({ slidePreviews }) {
   const [touchEnd, setTouchEnd] = useState(0);
 
   useEffect(() => {
-    setIndex(0);
+    setIndex(0); // restart slider for new project page
   }, [slidePreviews]);
   
   useEffect(() => {
