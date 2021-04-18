@@ -1,3 +1,4 @@
+export { default as portfolio_home } from './portfolio-home.png';
 export { default as listings_home } from './listings-home.png';
 export { default as manage_home } from './manage-home.png';
 export { default as insure_home } from './insure-home.png';

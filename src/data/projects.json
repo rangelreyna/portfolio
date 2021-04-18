@@ -2,22 +2,25 @@
     {
         "id": "240458",
         "title": "Personal Portfolio", 
-        "date": "March 2021",
+        "date": "April 2021",
         "pathname": "personal-portfolio",
         "live": "http://reynarangel.com/",
         "github": "https://github.com/rangelreyna/portfolio",
         "technologies": "React - Sass",
-        "intro": "",
+        "intro": "A multi-page website showcasing my personal projects, some information about me, and ways to reach me.",
         "detailText": [
-            "",
-            "",
-            ""
+            "This project provided me with great insight into the <strong>full website development process</strong>. The process was challenging since it involved many practices I had no experience with, such as content writing and <strong>layout design</strong>. I also faced many development issues as I tried to integrate technologies I hadn’t worked with before. This was also a greater scale project than I was used to working on, so keeping an organized file structure was difficult. However, these difficulties greatly added to my web development learning experience.",
+            "In case you’re curious, the <strong>steps</strong> I followed were: decide on website content to host, create/write this content, decide on the websites general architecture, sketch low-fidelity wireframes, design high-fidelity prototypes with <strong>Adobe XD</strong>, decide what technologies to build with, and develop the website.",
+            "On the programming side, I chose to build this site with <strong>React</strong> since I wanted to gain more experience with it and was also curious about using <strong>React Router</strong> to simulate multi-page navigation. To handle my contact form’s submission, I used the <strong>Formspree API</strong> along with the react-hook-form library to help with from validation. I also used <strong>Framer Motion</strong> and react-intersection-observer to implement some simple animations as an element was rendered or scrolled by. Most other functionalities were simply handled with <strong>useState</strong> and <strong>useEffect</strong>, like the mobile menu and slider within each project page.", 
+            "Lastly, I built this website to be <strong>fully responsive</strong> starting with a <strong>mobile-first</strong> approach and used <strong>Sass partials</strong> to keep my styles organized and modular."
         ],
         "hasFMCredit": false,
         "homePreview": "portfolio_home",
         "slidePreviews": [
-            "/slider-previews/portfolio-desktop.png",
-            "/slider-previews/portfolio-mobile.png"
+            "/slider-previews/portfolio-about-desktop.png",
+            "/slider-previews/portfolio-contact-desktop.png", 
+            "/slider-previews/portfolio-contact-mobile.png",
+            "/slider-previews/portfolio-about-mobile.png"
         ],
         "prevProject": {
             "title": "Huddle Landing Page",

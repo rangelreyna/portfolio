@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FadeInWhenVisible } from 'components';
-import { listings_home, manage_home, insure_home, fylo_home, huddle_home } from 'assets/images';  
+import { portfolio_home, listings_home, manage_home, insure_home, fylo_home, huddle_home } from 'assets/images';  
 import { ReactComponent as ArrowRight } from 'assets/svgs/icon-arrow-right.svg';
 
-// used to call preview imgs dynamically by name, still need to add 'portfolio' 
+// used to call preview imgs dynamically by name  
 const previews = {
+  portfolio_home: portfolio_home,
   listings_home: listings_home,
   manage_home: manage_home,
   insure_home: insure_home,

@@ -11,9 +11,6 @@
 
     .project{
         margin-bottom: 60px; 
-        &:first-child{
-            display: none; // will remove 
-        }
         &__preview{
             margin-bottom: 30px; 
             display: block;

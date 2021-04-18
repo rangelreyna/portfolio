@@ -698,10 +698,6 @@ h2, h3, h4, h5 {
   margin-bottom: 60px;
 }
 
-.home__projects-sec .project:first-child {
-  display: none;
-}
-
 .home__projects-sec .project__preview {
   margin-bottom: 30px;
   display: block;
