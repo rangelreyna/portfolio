@@ -7,6 +7,7 @@ function Slider({ slidePreviews }) {
   const [canClickLeft, setCanClickLeft] = useState(false);
   const [canClickRight, setCanClickRight] = useState(true);
   const [touchStart, setTouchStart] = useState(0);
+  const [touchMoved, setTouchMoved] = useState(false);
   const [touchEnd, setTouchEnd] = useState(0);
 
   useEffect(() => {
@@ -46,15 +47,21 @@ function Slider({ slidePreviews }) {
   };
 
   const handleTouchMove = (e)  => {
+    if (!touchMoved){
+      setTouchMoved(true);
+    }
     setTouchEnd(e.targetTouches[0].clientX);
   };
 
   const handleTouchEnd = ()  => {
-    if(touchStart - touchEnd < -75){
-      handleLeft();
-    }
-    if(touchStart - touchEnd > 75){
-      handleRight();
+    if (touchMoved){
+      if (touchStart - touchEnd < -75){
+        handleLeft();
+      }
+      if (touchStart - touchEnd > 75){
+        handleRight();
+      }
+      setTouchMoved(false);
     }
   };
 
