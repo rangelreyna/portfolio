@@ -21,7 +21,6 @@ This project was created as a portfolio to showcase projects I've worked on, sha
   - partials 
   - variables 
   - Flexbox 
-  - CSS Grid 
 - Mobile-first workflow
 
 ### Steps I followed 
