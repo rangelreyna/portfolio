@@ -2,7 +2,7 @@
 
 This project was created as a portfolio to showcase projects I've worked on, share some information about me, and provide ways to reach me. It was built with React and Sass. 
 
-![Design preview of portfolio home page](./public/design/desktop-preview) 
+![Design preview of portfolio home page](./public/design/desktop-preview.png) 
 
 ## My process
 
