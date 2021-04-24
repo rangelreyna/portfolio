@@ -11,7 +11,7 @@
         display: block;
         width: 100%;
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     &__left-btn, &__right-btn{

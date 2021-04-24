@@ -1626,8 +1626,8 @@ h2, h3, h4, h5 {
   display: block;
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .slider__left-btn, .slider__right-btn {
