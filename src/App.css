@@ -1625,6 +1625,7 @@ h2, h3, h4, h5 {
 .slider__slide {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .slider__left-btn, .slider__right-btn {
@@ -2050,6 +2051,7 @@ h2, h3, h4, h5 {
   margin: 0 auto 60px auto;
   width: 95%;
   max-width: 980px;
+  height: auto;
   overflow: hidden;
   background-color: #fcfcfc;
 }
