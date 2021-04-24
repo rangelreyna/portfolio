@@ -47,7 +47,7 @@ function About({ transition }) {
       <section className="about__cta-sec">
         <FadeInWhenVisible>
           <div className="container">
-            <p>I’m currently looking for an opportunity to expand my skillset as a Front-end developer in a professional setting.</p>
+            <p>I’m currently looking for an opportunity to expand my skill set as a Front-end developer in a professional setting.</p>
             <div className="accent-line"></div>
             <h4>If you haven't yet</h4>
             <p>I'd love for you to 

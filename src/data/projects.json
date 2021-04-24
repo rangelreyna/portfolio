@@ -7,11 +7,11 @@
         "live": "http://reynarangel.com/",
         "github": "https://github.com/rangelreyna/portfolio",
         "technologies": "React - Sass",
-        "intro": "A multi-page website showcasing my personal projects, some information about me, and ways to reach me.",
+        "intro": "A multi-page website showcasing personal projects, my story, and ways to reach me.",
         "detailText": [
             "This project provided me with great insight into the <strong>full website development process</strong>. The process was challenging since it involved many practices I had no experience with, such as content writing and <strong>layout design</strong>. I also faced many development issues as I tried to integrate technologies I hadn’t worked with before. This was also a greater scale project than I was used to working on, so keeping an organized file structure was difficult. However, these difficulties greatly added to my web development learning experience.",
-            "In case you’re curious, the <strong>steps</strong> I followed were: decide on website content to host, create/write this content, decide on the websites general architecture, sketch low-fidelity wireframes, design high-fidelity prototypes with <strong>Adobe XD</strong>, decide what technologies to build with, and develop the website.",
-            "On the programming side, I chose to build this site with <strong>React</strong> since I wanted to gain more experience with it and was also curious about using <strong>React Router</strong> to simulate multi-page navigation. To handle my contact form’s submission, I used the <strong>Formspree API</strong> along with the react-hook-form library to help with from validation. I also used <strong>Framer Motion</strong> and react-intersection-observer to implement some simple animations as an element was rendered or scrolled by. Most other functionalities were simply handled with <strong>useState</strong> and <strong>useEffect</strong>, like the mobile menu and slider within each project page.", 
+            "In case you’re curious, the <strong>steps</strong> I followed were: decide on website content to host, create/write this content, decide on the website's general architecture, sketch low-fidelity wireframes, design high-fidelity prototypes with <strong>Adobe XD</strong>, decide what technologies to build with, and develop the website.",
+            "On the programming side, I chose to build this site with <strong>React</strong> since I wanted to gain more experience with it and was also curious about using <strong>React Router</strong> to simulate multi-page navigation. To handle my contact form’s submission, I used the <strong>Formspree API</strong> along with the react-hook-form library to help with form validation. I also used <strong>Framer Motion</strong> and react-intersection-observer to implement some simple animations as an element was rendered or scrolled by. Most other functionalities were simply handled with <strong>useState</strong> and <strong>useEffect</strong>, like the mobile menu and slider within each project page.", 
             "Lastly, I built this website to be <strong>fully responsive</strong> starting with a <strong>mobile-first</strong> approach and used <strong>Sass partials</strong> to keep my styles organized and modular."
         ],
         "hasFMCredit": false,
@@ -39,7 +39,7 @@
         "live": "https://static-job-listings-three.vercel.app/",
         "github": "https://github.com/rangelreyna/projects-and-challenges/tree/master/static-job-listings-master",
         "technologies": "React - Sass",
-        "intro": "A React app that allows you to filter through a set of job listings based on job role, level, and technologies used.",
+        "intro": "A React app that allows you to filter through a set of job listings based on job role, level, and technologies required.",
         "detailText": [
             "This was my first project working with <strong>React</strong>. It was a great exercise to help me learn how dynamic web applications work. I chose to build it with React to help dynamically render different job listings as filtering categories changed.",
             "The changing state of this app was managed using <strong>React hooks</strong> such as <strong>useState</strong> and <strong>useEffect</strong>. The initial set of displayed job listings are retrieved from a <strong>JSON</strong> file and these are then <strong>filtered</strong> through as the user selects category tags. The user is able to remove category tags from the filtering set one at a time or completely clear the set and view the initial job listings again.",
