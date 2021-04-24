@@ -2,6 +2,7 @@
 .slider{ 
 
     &__container{
+        box-sizing: border-box;
         width: 100%;
         height: auto;
         display: flex;
@@ -10,6 +11,7 @@
     }
 
     &__slide{
+        box-sizing: border-box;
         display: block;
         width: 100%;
         height: auto;

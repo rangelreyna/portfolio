@@ -1611,6 +1611,8 @@ h2, h3, h4, h5 {
 }
 
 .slider__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -1625,6 +1627,8 @@ h2, h3, h4, h5 {
 }
 
 .slider__slide {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
   width: 100%;
   height: auto;
