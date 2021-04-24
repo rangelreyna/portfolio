@@ -362,7 +362,7 @@ h2, h3, h4, h5 {
 }
 
 .footer {
-  padding: 8vw 0 10vw 0;
+  padding: 9vw 0 10vw 0;
   background-color: #495d69;
   border-top: 4px solid #79afec;
 }
@@ -1099,8 +1099,14 @@ h2, h3, h4, h5 {
     font-size: 3.4375rem;
   }
   .about__hero-sec__left p {
-    max-width: 450px;
+    max-width: 350px;
     font-size: 1.375rem;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .about__hero-sec__left p {
+    max-width: 450px;
   }
 }
 
@@ -1110,6 +1116,7 @@ h2, h3, h4, h5 {
     font-size: 3.9375rem;
   }
   .about__hero-sec__left p {
+    max-width: 500px;
     margin: 0 0 50px 0;
     font-size: 1.5625rem;
   }
@@ -1618,7 +1625,6 @@ h2, h3, h4, h5 {
 .slider__slide {
   display: block;
   width: 100%;
-  height: auto;
 }
 
 .slider__left-btn, .slider__right-btn {

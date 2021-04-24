@@ -13,7 +13,7 @@ function About({ transition }) {
           animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={transition}>
           <div className="about__hero-sec__left">
             <h2>About Me</h2>
-            <p>Hi, my name is Reyna and I'm a Computer Science graduate who likes building pretty things.</p>
+            <p>Hi, my name is Reyna and I'm a Computer Science graduate who likes building beautiful experiences.</p>
             <a href={resume} target="_blank" rel="noreferrer">
               <Button className="resume-btn" content="Download resume" />
             </a>
