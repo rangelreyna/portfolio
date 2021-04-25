@@ -2,21 +2,18 @@
 .slider{ 
 
     &__container{
-        box-sizing: border-box;
         width: 100%;
-        height: auto;
         display: flex;
         transform: translateX(0%);
         transition: transform 0.3s;
     }
 
     &__slide{
-        box-sizing: border-box;
         display: block;
         width: 100%;
         max-width: 100%;
         height: auto;
-        object-fit: contain;
+        align-self: flex-start;
     }
 
     &__left-btn, &__right-btn{

@@ -1611,10 +1611,7 @@ h2, h3, h4, h5 {
 }
 
 .slider__container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1627,14 +1624,12 @@ h2, h3, h4, h5 {
 }
 
 .slider__slide {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .slider__left-btn, .slider__right-btn {
@@ -2060,7 +2055,6 @@ h2, h3, h4, h5 {
   margin: 0 auto 60px auto;
   width: 95%;
   max-width: 980px;
-  height: auto;
   overflow: hidden;
   background-color: #fcfcfc;
 }
